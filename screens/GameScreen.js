@@ -25,7 +25,7 @@ const renderListItem = (value, numOfRound) => (
     <BodyText>{value}</BodyText>
   </View>
 );
-console.log(Dimensions.get('window').width);
+
 const GameScreen = props => {
   const initialGuess = generateRandomBetween(1, 100, props.userChoice);
   const [currentGuess, setCurrentGuess] = useState(initialGuess);
